@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/ISOTIPOCLINICA.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+ <title>CLÍNICA NORTE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/LOGOCLINICA2.png" alt="" width="190px" height="40px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown pt-2">
+                <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);">
+                Servicios</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Diagnóstico por imágen</a></li>
+                  <li><a class="dropdown-item" href="#">Especialidades</a></li>
+                  <li><a class="dropdown-item" href="#">Internación</a></li>
+                  <li><a class="dropdown-item" href="#">Laboratorio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);">
+                Para médicos</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a class="nav-link active" aria-current="page" href="#" style="font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);" >Turnos</a>
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a class="nav-link" href="#" style="font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);">Registrarse</a>
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a class="nav-link" href="#" style="font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);">Iniciar Sesión</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+<!--Aqui finaliza el navbar de navegación-->
+    <main>
+      <section class="mb-0">
+        <div class="image-container">
+      <img class="img-fluid mx-auto d-block" src="./img/imgINICIO.jpg" alt="imagen de presentacion" width="1260" height="800">
+    </div>
+    <div class="search-box">
+      <div class="input-group">
+        <div class="form-outline">
+          <label class="mb-2" style="font-size: poppins,sans-serif; color: white;" for="">Buscar médico por especialidad</label>
+          <div class="input-container">
+          <input class="col-md-12" type="text" id="buscarInput" placeholder="">
+          <span id="borrarTexto" onclick="borrarInput()">X</span>
+          </div>
+          <button class="btn btn-primary mt-2" onclick="buscarMedico()">Buscar</button>
+          <div class=" lh-base fw-bold mt-2" style="color: rgb(26, 34, 96); font-family: poppins,sans-serif;" id="resultadoBusqueda"></div>
+      </div>
+  </div>
+      </section>
+<div class="text-md-star mt-5 mb-4 ms-5">
+<h1 class= "display-4" style="font-size:2rem;" >QUIENES SOMOS</h1>
+<!--Aqui comienza la segunda sección de texto e imágen-->
+</div>
+<section>
+  <div class="containercolor">
+  <div class="container-fluid mb-2">
+    <div class="col-md-12">
+      <div class="row g-0 overflow-hidden flex-md-row mb-4">
+        <div class="col p-4 d-flex flex-column position-static">
+          <p class="card-text mb-auto lh-base">CLÍNICA NORTE es la mayor práctica médica integrada y grupal del norte de Argentina. Construimos el futuro: uno que ofrece la mejor 
+            atención médica posible a todos y en el que más gente puede 
+            recuperar la salud en casa. Nuestros incesantes estudios se 
+            convierten en diagnósticos tempranos y curaciones nuevas. Así 
+            damos esperanza a quienes más la necesitan.</p>
+            <P class="text-primary">INNOVAR PARA ENCONTRAR NUEVAS SOLUCIONES</P>
+             <p>En esta Clínica, los expertos se esfuerzan juntos por resolver las 
+             necesidades más apremiantes y aún no atendidas de los 
+             pacientes. Nuestro historial de innovación empezó en 1864, con los 
+             hermanos Farrugia que fueron los primeros en implementar un 
+             método integrado y basado en equipos para ejercer la medicina. 
+             Ahora, ese espíritu revolucionario impulsa innovaciones, como la 
+             plataforma de Clínica Norte que genera nuevas tecnologías para 
+             cambiar la forma de prestar atención médica.</p>
+        </div>
+        <div class="col-auto d-lg-block mb-4 mt-4 me-4">
+          <img src="./img/vecteezy_portage-doctor-pediatrics-surgeon-orthopedic-physician_17012476_298.jpg" alt="imagenDirectormédico" class="img-fluid" width="620" height="450"> 
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<!--Aqui comienza la tercera sección de texto e imágen-->
+<section>
+  <div class="container-fluid">
+    <div class="row">
+        <!-- Primera columna de texto -->
+        <div class="col-md-6 p-5">
+            <h2 class="lh-base" >COMIENZA AQUÍ TU SOLICITUD
+              PARA UNA CITA MÉDICA.</h2>
+            <p class="fw-bold" style="color: rgb(88, 87, 87); font-family: poppins, sans-serif;">Esta es la manera más fácil de obtener un turno médico.</p>
+        </div>
+        <!-- Segunda columna de texto -->
+        <div class="col-md-6 mt-4 text-center">
+            <h4>Paciente nuevo:</h4>
+            <p class="lh-1" style="color: rgb(88, 87, 87); font-family: poppins, sans-serif;">debes <a href="#">registrarte</a> e ingresar como usuario.</p>
+            <br>
+            <h4>Paciente existente:</h4>
+            <p class="lh-1" style="color: rgb(88, 87, 87); font-family: poppins, sans-serif;">solicita turno aquí: <a href="#">pedir turno.</a></p>
+        </div> 
+    </div>
+</div>
+<br>
+<br>
+</section>
+    </main>
+    <footer>
+      <!-- Contenido del footer -->
+      <img src="./img/ISOTIPOCLINICA.png" width="50" height="50" alt="">
+      <br>
+      <br>
+      <p class="lh-1 fw-bold" style="font-size: 15px;">Tel. +54 (0381) 4215106</p>
+      <p class="lh-1">Crisóstomo Alvarez 656-C.P 4000-S. M. de Tucumán-Argentina</p>
+      <p class="lh-1">© 2023 Copyright: RollingCodeSchool.com.ar</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/tu_pagina" target=""><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/tu_pagina" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/tu_pagina" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer> 
+<script src="./app.js"></script>
+</body>
+</html>

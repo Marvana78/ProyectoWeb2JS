@@ -1,0 +1,61 @@
+h1 {
+    font-family: 'Poppins', sans-serif, bold; color: rgb(4, 132, 211);
+
+}
+
+h2{
+    font-family: 'Poppins', sans-serif, bold; color: rgb(4, 132, 211);
+}
+
+h4{
+    font-family: 'Poppins', sans-serif, bold; color: rgb(4, 132, 211);
+}
+
+.containercolor{
+    background:rgba(219, 216, 216, 0.667);
+    margin: 0%;
+}
+
+.containercolorfooter{
+    background-color: rgb(188, 187, 187);
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif, bold;
+    color: rgb(4, 132, 211);
+    font-size: 13px;
+}
+
+.social-icons {
+    margin-right: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+ .search-box {
+    position: absolute;
+    top: 122px; /* Ajusta la posición vertical del buscador */
+    right: 590px; /* Ajusta la posición horizontal del buscador */
+    z-index: 1; /* Asegura que el buscador esté por encima de la imagen */
+}
+
+.input-container {
+    position: relative;
+  }
+  
+  #borrarTexto {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  
