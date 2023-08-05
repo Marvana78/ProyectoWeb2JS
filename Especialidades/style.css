@@ -1,9 +1,10 @@
 h1 {
     font-family: 'Poppins', sans-serif, bold; color: rgb(4, 132, 211);
-    text-align:start;
+  
 }
 h5{
-    font-family: 'Poppins', sans-serif, bold; color: rgb(4, 132, 211);
+    font-family: 'Poppins', sans-serif; color: rgb(4, 132, 211);
+    
 }
 h6{
     font-family:'Poppins', sans-serif, bold; color: rgb(71, 71, 71);
