@@ -1,5 +1,4 @@
 
-
 /// botones cambio de formulario ////////
 let formpaciente = document.getElementById("btnradio1");
 let formprofecional = document.getElementById("btnradio2");
