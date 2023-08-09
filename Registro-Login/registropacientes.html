@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/ISOTIPOCLINICA.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/registro.css"">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/LOGOCLINICA2.png"
+              alt=""
+              width="190px"
+              height="40px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                >
+                  Servicios</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Diagnóstico por imágen</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Especialidades</a></li>
+                  <li><a class="dropdown-item" href="#">Internación</a></li>
+                  <li><a class="dropdown-item" href="#">Laboratorio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown pt-2">
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                  >Turnos</a
+                >
+              </li>
+              <li class="nav-item dropdown pt-2">
+                <a
+                  class="nav-link"
+                  href="#"
+                  style="
+                    font-family: 'Poppins', sans-serif;
+                    color: rgb(4, 132, 211);
+                  "
+                  >Iniciar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="MODAL1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <center>
+              <img
+                src="/img/cheeck.png"
+                alt="iconcheeck"
+                width="50%"
+                height="50%"
+              />
+            </center>
+            <p>Registro exitoso, verifique su casilla de correo electrónico.</p>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="formularioregistro">
+      <div class="caja2"></div>
+      <div class="caja1">
+        <div class="titform">
+          <h2>Formulario de registro</h2>
+        </div>
+        <div class="cambiodeformulario">
+          <!-- <div class="titulobtn">seleccione la opcion correcta a la hora de registrarse.</div> -->
+          <div
+            class="btn-group"
+            class="formselection"
+            role="group"
+            aria-label="Basic radio toggle button group"
+          >
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio1"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-primary" for="btnradio1"
+              >Paciente</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio2"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="btnradio2"
+              >Profesional</label
+            >
+          </div>
+        </div>
+        <form id="pacienteform">
+          <div class="planillaform">
+            <div class="datosper">
+              <div class="nom-apl">
+                <div class="input-group">
+                  <input
+                    id="nombrepaciente"
+                    type="text"
+                    class="form-control"
+                    maxlength="44"
+                    placeholder="Nombre"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <input
+                    id="apellidopaciente"
+                    type="text"
+                    class="form-control"
+                    maxlength="44"
+                    placeholder="Apellido"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="cel-dni">
+                <div class="input-group">
+                  <div class="input-group-text" id="btnGroupAddon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="celupacinte"
+                    type="text"
+                    class="form-control"
+                    placeholder="Número de celular"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <div class="input-group-text" id="btnGroupAddon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-vcard"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"
+                      />
+                      <path
+                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="Documentonum2"
+                    type="text"
+                    class="form-control"
+                    placeholder="Número de Documento"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="datoselec">
+              <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  id="emailpaciente"
+                  type="email"
+                  class="form-control"
+                  maxlength="60"
+                  placeholder="Correo electrónico"
+                  aria-label="email"
+                  aria-describedby="btnGroupAddon"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-key"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                    />
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                  </svg>
+                </div>
+                <input
+                  id="password10"
+                  type="password"
+                  class="form-control"
+                  maxlength="44"
+                  placeholder="Contraseña"
+                  aria-label="password"
+                  aria-describedby="btnGroupAddon"
+                  required
+                />
+                <div class="ojo">
+                  <button type="button" onclick="mostrarcontraseña1()">
+                    <img src="./img/iconos/eye.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-key"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                    />
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                  </svg>
+                </div>
+                <input
+                  id="password11"
+                  type="password"
+                  class="form-control"
+                  maxlength="44"
+                  placeholder="Repetir contraseña"
+                  aria-label="password"
+                  aria-describedby="btnGroupAddon"
+                  required
+                />
+                <div class="ojo">
+                  <button type="button" onclick="mostrarcontraseña2()">
+                    <img src="./img/iconos/eye.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <center>
+              <button type="submit" class="btn btn-primary">Registrarse</button>
+            </center>
+            <div
+              id="mensajesalertasid"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              Las contraseñas deben ser iguales
+            </div>
+            <div
+              id="alertacontraseñacorta"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              La contraseña es corta
+            </div>
+          </div>
+        </form>
+        <form id="profesionalform" hidden>
+          <div class="planillaform">
+            <div class="datosper">
+              <div class="nom-apl">
+                <div id="entradanombre" class="input-group">
+                  <input
+                    id="nombreprofecionalimput"
+                    type="text"
+                    class="form-control"
+                    maxlength="44"
+                    placeholder="Nombre"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <input
+                    id="apeliidoprofecionalimput"
+                    type="text"
+                    class="form-control"
+                    maxlength="44"
+                    placeholder="Apellido"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="cel-dni">
+                <div class="input-group">
+                  <div class="input-group-text" id="btnGroupAddon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="Dninum"
+                    type="text"
+                    class="form-control"
+                    placeholder="Número de celular"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <div class="input-group-text" id="btnGroupAddon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-vcard"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"
+                      />
+                      <path
+                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="Documentonum"
+                    type="text"
+                    class="form-control"
+                    placeholder="Número de documento"
+                    aria-label="correo electronico"
+                    aria-describedby="btnGroupAddon"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="datoselec">
+              <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-mortarboard"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                    />
+                    <path
+                      d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  id="numeromatriculaimput"
+                  type="text"
+                  class="form-control"
+                  max="44"
+                  placeholder="Número de matrícula"
+                  aria-label="password"
+                  aria-describedby="btnGroupAddon"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <select
+                  id="Especializacionimput"
+                  class="form-select"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected disabled value="">Especialización</option>
+                  <option value="1">Cardiología</option>
+                  <option value="2">Cirugía General</option>
+                  <option value="3">Clínia médica</option>
+                  <option value="4">Dermatología</option>
+                  <option value="5">Gastroenterología</option>
+                  <option value="6">Ginecología</option>
+                  <option value="7">Oftalmología</option>
+                  <option value="8">Oncología</option>
+                  <option value="9">Pediatria</option>
+                  <option value="10">Traumatología</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="emailprofesionala"
+                  type="email"
+                  class="form-control"
+                  maxlength="60"
+                  placeholder="Correo electrónico"
+                  aria-label="Input group example"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-key"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                    ></path>
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                  </svg>
+                </span>
+                <input
+                  id="password201"
+                  type="password"
+                  class="form-control"
+                  maxlength="40"
+                  placeholder="Contraseña"
+                  aria-label="Input group example"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+                <div class="ojo">
+                  <button
+                    id="password20"
+                    type="button"
+                    onclick="mostrarcontraseña3()"
+                  >
+                    <img src="./img/iconos/eye.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-key"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                    ></path>
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                  </svg>
+                </span>
+                <input
+                  id="password21"
+                  type="password"
+                  class="form-control"
+                  maxlength="44"
+                  placeholder="Repetir contraseña"
+                  aria-label="Input group example"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+                <div class="ojo">
+                  <button type="button" onclick="mostrarcontraseña4()">
+                    <img src="./img/iconos/eye.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <center>
+              <button type="submit" class="btn btn-primary">
+                Registrarme como profesional
+              </button>
+            </center>
+            <div
+              id="mensajesalertasid2"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              Las contraseñas deben ser iguales
+            </div>
+            <div
+              id="alertacontraseñacorta2"
+              class="mensajesalertas alert alert-danger"
+              hidden
+            >
+              La contraseña es corta
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/siginlogin.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
