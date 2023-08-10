@@ -1,26 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
-  #resultado {
-    font-weight: bold;
-  }
-
-  .modal-header{
-background-color: blue;
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-size: 100%;
+  background-image: url("../Home/img/imgINICIO.jpg");
+  background-size: cover; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
 }
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+#resultado {
+  font-weight: bold;
+}
+
+.modal-header {
+  background-color: rgb(66, 66, 163);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.container-bg {
+  border-radius: 10%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 20%; 
+  max-width: 400px; 
+  background-color: rgba(92, 92, 92, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  color: white;
+}
+
 
 
